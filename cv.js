@@ -1,13 +1,3 @@
-/*const API_URL = "https://jsonplaceholder.typicode.com/users/1";
-const HTMLResponse = document.querySelector("#name");
- fetch(`${API_URL}/users`)
-    .then((response) => response.json())
-    .then ((users) => {
-        const tpl = users.map(user => `<h2>${user.name}</h2>`)
-        HTMLResponse.innerHTML = `<ul>${tpl}</ul>`
-    });*/
-
-
 //se hace la peticion a la api
 const listUser=async()=>{
     const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
